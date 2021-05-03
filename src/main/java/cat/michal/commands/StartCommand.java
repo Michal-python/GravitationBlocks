@@ -1,6 +1,6 @@
 package cat.michal.commands;
 
-import cat.michal.GravityBlocks;
+import cat.michal.GravitationBlocks;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
@@ -17,7 +17,7 @@ public class StartCommand implements CommandExecutor {
     @Override
     public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label, @NotNull String[] args) {
         if(!(sender instanceof Player)) { System.out.println("You must be player"); return false;}
-        GravityBlocks.isOn = true;
+        GravitationBlocks.isOn = true;
         Bukkit.broadcastMessage(ChatColor.translateAlternateColorCodes('&', "&a&lOd teraz każdy blok ma grawitacje!"));
         return false;
     }

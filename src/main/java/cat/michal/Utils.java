@@ -20,7 +20,7 @@ public class Utils {
         int radius = 15;
         Location loc = p.getLocation();
         World world = p.getWorld();
-        List<Block> blocks = new ArrayList<Block>();
+        List<Block> blocks = new ArrayList<>();
         for (int x = -radius; x < radius; x++) {
             for (int y = -radius; y < radius; y++) {
                 for (int z = -radius; z < radius; z++) {

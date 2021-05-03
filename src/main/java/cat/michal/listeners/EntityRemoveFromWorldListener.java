@@ -1,6 +1,6 @@
 package cat.michal.listeners;
 
-import cat.michal.GravityBlocks;
+import cat.michal.GravitationBlocks;
 import com.destroystokyo.paper.event.entity.EntityRemoveFromWorldEvent;
 import org.bukkit.entity.FallingBlock;
 import org.bukkit.event.EventHandler;
@@ -14,7 +14,7 @@ public class EntityRemoveFromWorldListener implements Listener {
 
     @EventHandler
     public void onRemove(EntityRemoveFromWorldEvent e) {
-        if(GravityBlocks.isOn) {
+        if(GravitationBlocks.isOn) {
             if (e.getEntity() instanceof FallingBlock) {
                 FallingBlock f = (FallingBlock) e.getEntity();
                 e.getEntity().getLocation().getBlock().setType(f.getMaterial());

@@ -22,9 +22,9 @@ import java.util.List;
 
 import static org.bukkit.Material.*;
 
-public final class GravityBlocks extends JavaPlugin implements Listener {
+public final class GravitationBlocks extends JavaPlugin implements Listener {
     public static boolean isOn = false;
-    static List<Material> blacklist = Arrays.asList(
+    static List<Material> blackList = Arrays.asList(
             AIR,
             BEDROCK,
             OBSIDIAN
@@ -40,7 +40,7 @@ public final class GravityBlocks extends JavaPlugin implements Listener {
                 for (Block b : Utils.getBlocks(p)) {
                     if(!b.isSolid()) {return;}
                     if (!b.getRelative(BlockFace.DOWN).getType().equals(AIR) || b.getRelative(BlockFace.DOWN).isSolid()) {return;}
-                    if (blacklist.contains(b.getType())) {return;}
+                    if (blackList.contains(b.getType())) {return;}
                     if(b.getRelative(BlockFace.DOWN).getType().equals(WATER)) {return;}
                     Location lok = Utils.getCenter(b.getLocation());
                     b.getLocation().getWorld().spawnFallingBlock(lok, b.getType(), (byte) 0);

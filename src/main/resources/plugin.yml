@@ -1,10 +1,10 @@
-name: GravityBlocks
+name: GravitationBlocks
 version: ${project.version}
-main: cat.michal.GravityBlocks
+main: cat.michal.GravitationBlocks
 api-version: 1.16
 authors: [ TheMichalPL ]
 commands:
-  gravitystart:
-    permission: gravity.start
-  gravitystop:
-    permission: gravity.stop
+  gravitationstart:
+    permission: gravitation.start
+  gravitationstop:
+    permission: gravitation.stop
