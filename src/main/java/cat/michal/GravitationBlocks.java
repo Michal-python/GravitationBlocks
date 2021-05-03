@@ -22,7 +22,7 @@ import java.util.List;
 
 import static org.bukkit.Material.*;
 
-public final class GravitationBlocks extends JavaPlugin implements Listener {
+public final class GravitationBlocks extends JavaPlugin {
     public static boolean isOn = false;
     static List<Material> blackList = Arrays.asList(
             AIR,
