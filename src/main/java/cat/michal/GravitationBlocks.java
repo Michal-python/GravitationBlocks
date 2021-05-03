@@ -42,8 +42,8 @@ public final class GravitationBlocks extends JavaPlugin implements Listener {
                     if (!b.getRelative(BlockFace.DOWN).getType().equals(AIR) || b.getRelative(BlockFace.DOWN).isSolid()) {return;}
                     if (blackList.contains(b.getType())) {return;}
                     if(b.getRelative(BlockFace.DOWN).getType().equals(WATER)) {return;}
-                    Location lok = Utils.getCenter(b.getLocation());
-                    b.getLocation().getWorld().spawnFallingBlock(lok, b.getType(), (byte) 0);
+                    Location centerLocation = Utils.getCenter(b.getLocation());
+                    b.getLocation().getWorld().spawnFallingBlock(centerLocation, b.getType(), (byte) 0);
                     b.setType(AIR);
                 }
             }
