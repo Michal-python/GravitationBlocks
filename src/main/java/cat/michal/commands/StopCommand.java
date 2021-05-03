@@ -12,7 +12,7 @@ import org.jetbrains.annotations.NotNull;
 
 public class StopCommand implements CommandExecutor {
     public StopCommand(JavaPlugin j) {
-        j.getCommand("gravitystop").setExecutor(this::onCommand);
+        j.getCommand("gravitationstop").setExecutor(this::onCommand);
     }
     @Override
     public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label, @NotNull String[] args) {
