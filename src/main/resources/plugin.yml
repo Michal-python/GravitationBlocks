@@ -1,0 +1,10 @@
+name: GravityBlocks
+version: ${project.version}
+main: cat.michal.GravityBlocks
+api-version: 1.16
+authors: [ TheMichalPL ]
+commands:
+  gravitystart:
+    permission: gravity.start
+  gravitystop:
+    permission: gravity.stop
